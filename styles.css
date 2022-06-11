@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: rgb(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 0 5%;
+}
+header #page-logo a {
+  color: orange;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+header #page-logo a:hover {
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  list-style: none;
+  /* margin-right: 5px; */
+  margin: 0 1rem;
+}
+nav ul a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 0.8rem;
+  color: orange;
+  border-radius: 0.3rem;
+}
+nav ul a:hover {
+  background-color: orange;
+  color: black;
+}
+
+.menu-btn {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+.menu-btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  display: none;
+}
+
+/* #latest-products #content1 {
+  background-color: rgb(187, 147, 154);
+  text-align: center;
+  width: 100%;
+  margin: 0;
+} */
+/* #latest-products ul {
+  /* border: 7px solid green; */
+
+/* #latest-products ul li img {
+  width: 100%;
+  text-align: center;
+} */
+/* main h1 {
+  text-align: center;
+  color: rgb(226, 159, 35);
+} */
+/* #latest-products ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+#content1 {
+  margin: 0;
+}
+#latest-products ul li img #content1 {
+  border-radius: 10px;
+} */
+main h1 {
+  text-align: center;
+  color: rgb(238, 164, 45);
+  font-size: 3rem;
+}
+#latest-products {
+  width: 80%;
+  margin: 2rem auto;
+}
+#latest-products ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.food-item img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+.food-item {
+  background-color: pink;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.food-item-content {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.3rem;
+}
+.btn {
+  text-decoration: none;
+  background-color: orange;
+  border-radius: 4px;
+  padding: 0.7rem 0.5rem;
+  color: white;
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-size: 0.7rem;
+  justify-content: center;
+
+  width: 100px;
+}
+
+.btn:hover {
+  background-color: rgb(201, 141, 30);
+}
+.btn::after {
+}
+@media (max-width: 768px) {
+  #latest-products ul {
+    grid-template-columns: 100%;
+  }
+  nav ul {
+    display: none;
+  }
+}
+h2 {
+  font-size: 1.5rem;
+  color: rgb(48, 48, 48);
+}
+@media (max-width: 768px) {
+  main h1 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 480px) {
+  main h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 350px) {
+  main h1 {
+    font-size: 0.8rem;
+  }
+  header #page-logo a {
+    font-size: 1rem;
+  }
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#side-drawer:target {
+  display: block;
+}
+#side-drawer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 4rem 1.5rem;
+}
+#side-drawer ul li {
+  margin: 1.5rem 0;
+}
+#side-drawer a {
+  color: aliceblue;
+  font-size: 2rem;
+}
+#side-drawer header {
+  background-color: rgb(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5rem;
+  padding: 0 5%;
+}
+@media (max-width: 768px) {
+  .menu-btn {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .menu-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  }
+}
+@media (max-width: 238px) {
+  h2 {
+    font-size: 0.1rem;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+article:hover {
+  transform: scale(1.05);
+}
